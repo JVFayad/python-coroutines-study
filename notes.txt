@@ -1,0 +1,39 @@
+### 2001 / yield
+
+Significado:
+    - "Ceder a vez"
+    - "Um controlador de fluxo 'cedendo a vez' para outro gerador"
+
+
+### 2005 / yield como expressão
+    - yield além de retorno, faz entrada de dados
+    - Pode receber valores pelo método '.send()'
+
+### Coroutine
+
+Co-rotinas são componentes de programas de computador que generalizam subrotinas para multitarefa não preemptiva. 
+
+### 2009 / PEP-380 e yield from
+    - return: corrotina pode retornar algo no final
+    - yield from: corrotina pode delegar operação para outra corrotina
+        -- Subgerador: quem será consumido pelo yield from
+        -- Gerador delegante 
+        -- Client
+
+### 2012 / PEP-3156, corrotinas assíncronas
+    - Asyncio
+        - Gather
+        - Loop de eventos
+        - Task
+        - Future
+
+### 2015 / PEP-492, Async / Await
+    - @coroutine -> async
+    - yield from -> await
+    - Gerenciador de contexto assíncrono (async with)
+    - Iteradore assíncrono (async for)
+
+#### 2018 / melhorias na versão 3.7
+    - asyncio.run para executar corrotinas
+    - loop.call_soon que chama no início do loop
+    - loop.call_later que chama ao fim do loop
